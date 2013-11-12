@@ -1,0 +1,17 @@
+App = require 'app'
+
+###*
+  Controller {{#camelize}}{{pluralName}}{{/camelize}}Controller
+
+  @class {{#camelize}}{{pluralName}}{{/camelize}}Controller
+  @namespace App
+  @extends Ember.ArrayController
+###
+module.exports = App.{{#camelize}}{{pluralName}}{{/camelize}}Controller = Ember.ArrayController.extend
+  ###*
+    Holds our content
+
+    @property content
+    @type Array
+  ###
+  content: []

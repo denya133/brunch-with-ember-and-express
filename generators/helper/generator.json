@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "from": "helper.coffee.hbs",
+      "to": "app/helpers/{{name}}.coffee"
+    },
+    {
+      "from": "helpers.coffee.hbs",
+      "to": "app/helpers.coffee",
+      "method": "append"
+    }
+  ],
+  "dependencies": []
+}

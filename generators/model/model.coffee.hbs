@@ -1,0 +1,22 @@
+App = require 'app'
+
+###*
+  Model {{#camelize}}{{name}}{{/camelize}}
+
+  @class {{#camelize}}{{name}}{{/camelize}}
+  @namespace App
+  @extends DS.Model
+###
+module.exports = App.{{#camelize}}{{name}}{{/camelize}} = DS.Model.extend
+  # put your code here
+
+
+### If any special serializer or adapter is needed for this model, use this code:
+
+App.{{#camelize}}{{name}}{{/camelize}}Adapter = DS.RESTAdapter.extend
+  # your adapter code here
+
+App.{{#camelize}}{{name}}{{/camelize}}Serializer = DS.RESTSerializer.extend
+  # your serializer code here
+
+###

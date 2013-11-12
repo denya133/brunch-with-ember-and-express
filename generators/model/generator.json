@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "from": "model.coffee.hbs",
+      "to": "app/models/{{#camelize}}{{name}}{{/camelize}}.coffee"
+    },
+    {
+      "from": "models.coffee.hbs",
+      "to": "app/models.coffee",
+      "method": "append"
+    }
+  ],
+  "dependencies": []
+}

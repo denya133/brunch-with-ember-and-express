@@ -1,0 +1,11 @@
+App = require 'app'
+
+###*
+  Controller {{#camelize}}{{name}}{{/camelize}}Controller
+
+  @class {{#camelize}}{{name}}{{/camelize}}Controller
+  @namespace App
+  @extends Ember.Controller
+###
+module.exports = App.{{#camelize}}{{name}}{{/camelize}}Controller = Ember.Controller.extend
+  # put your code here

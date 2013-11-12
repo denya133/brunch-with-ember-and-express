@@ -1,0 +1,25 @@
+App = require 'app'
+
+###*
+  Route {{#camelize}}{{name}}{{/camelize}}Route
+
+  @class {{#camelize}}{{name}}{{/camelize}}Route
+  @namespace App
+  @extends Ember.Route
+###
+module.exports = App.{{#camelize}}{{name}}{{/camelize}}Route = Ember.Route.extend
+  ###*
+    Override this if needed, else remove it
+
+    @inheritDoc
+  ###
+  model: (params) ->
+    @_super arguments...
+
+  ###*
+    Override this if needed, else remove it
+
+    @inheritDoc
+  ###
+  setupController: (controller, model) ->
+    @_super arguments...

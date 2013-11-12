@@ -1,0 +1,16 @@
+App = require 'app'
+
+###*
+  View {{#camelize}}{{name}}{{/camelize}}View
+
+  @class {{#camelize}}{{name}}{{/camelize}}View
+  @namespace App
+  @extends Ember.View
+###
+module.exports = App.{{#camelize}}{{name}}{{/camelize}}View = Ember.View.extend
+  ###*
+    Remove this if you don't need to override it
+
+    @inheritDoc
+  ###
+  templateName: '{{name}}'

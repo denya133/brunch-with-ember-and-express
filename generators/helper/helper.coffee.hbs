@@ -1,0 +1,10 @@
+###*
+  Handlebars helper {{name}}
+
+  @method {{name}}
+  @for Ember.Handlebars.helpers
+  @param {Object} [context]*
+  @return {String} HTML string
+###
+module.exports = Ember.Handlebars.registerBoundHelper '{{name}}', (value, options) ->
+  # put your code here

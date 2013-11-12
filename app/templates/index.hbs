@@ -1,0 +1,25 @@
+<h2>Welcome to brunch with Ember and Bootstrap</h2>
+
+<div class="well">
+  <h4>
+    With keyword-brunch for compile time keyword replacement
+  </h4>
+  {{view "Bootstrap.AlertMessage" type="info" messageBinding="infoMessage"}}
+</div>
+
+<div class="well">
+  <h4>
+    With Font Awesome 3
+  </h4>
+  <pre>\{{bs-icon name="thumbs-up" type="danger"}} {{bs-icon name="thumbs-up" type="danger"}}</pre>
+  <div class="row">
+  {{#each name in iconNames}}
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="row">
+        <div class="col-xs-3 col-sm-2 text-center">{{bs-icon name=name type="success" class="icon-large"}}</div>
+        <div class="col-xs-9 col-sm-10">{{name}}</div>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+</div>

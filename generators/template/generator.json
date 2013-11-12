@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "from": "template.hbs.hbs",
+      "to": "app/templates/{{name}}.hbs"
+    },
+    {
+      "from": "templates.coffee.hbs",
+      "to": "app/templates.coffee",
+      "method": "append"
+    }
+  ],
+  "dependencies": []
+}

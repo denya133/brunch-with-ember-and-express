@@ -1,0 +1,51 @@
+{
+  "author": "Huafu Gandon <huafu.gandon@gmail.com>",
+  "name": "brunch-with-ember-and-bootstrap",
+  "description": "A Brunch skeleton for developing clean Ember applications with CoffeeScript, Stylus, Twitter Bootstrap and Font Awesome",
+  "version": "0.4.2-1",
+  "homepage": "https://github.com/huafu/brunch-with-ember-and-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huafu/brunch-with-ember-and-bootstrap.git"
+  },
+  "engines": {
+    "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "cake build",
+    "test": "cake test"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.6 < 2",
+    "coffee-script-brunch": ">= 1.6 < 2",
+    "css-brunch": ">= 1.6 < 2",
+    "stylus-brunch": ">= 1.6 < 2",
+    "uglify-js-brunch": ">= 1.6 < 2",
+    "clean-css-brunch": ">= 1.6 < 2",
+    "auto-reload-brunch": ">= 1.6 < 2",
+    "keyword-brunch": ">= 1.6 < 2",
+    "ember-handlebars-brunch": "*"
+  },
+  "devDependencies": {
+    "karma": "0.8.1"
+  },
+  "bugs": {
+    "url": "https://github.com/huafu/brunch-with-ember-and-bootstrap/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "brunch",
+    "skeleton",
+    "ember",
+    "ember-data",
+    "coffeescript",
+    "stylus",
+    "bootstrap",
+    "normalize",
+    "font awesome"
+  ],
+  "license": "MIT"
+}
