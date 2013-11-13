@@ -1,0 +1,42 @@
+extends layout
+
+include mixins/packages
+
+block head
+  link(rel='stylesheet', href='stylesheets/app.css')
+  //if IE 7
+      link(rel='stylesheet', href='stylesheets/font-awesome-ie7.min.css')
+  script(src='javascripts/head.js')
+
+block content
+  .container
+    .row.well
+      .span12
+        a.brand(href="https://github.com/jerfowler/ExpressBrunchJade", target="_blank")        
+          h1= title
+          small= version
+    .row
+      .span12
+        .hero-unit.well
+          p Welcome to Brunch with Ember, Express and Mongoose on Node.js
+          p: small <i class="icon-thumbs-up"></i> Based on 
+            p: a(href="https://github.com/huafu/brunch-with-ember-and-bootstrap", target="_blank") Brunch with Ember and Bootstrap
+            p: a(href="https://github.com/jerfowler/ExpressBrunchJade", target="_blank") Express Brunch with Jade
+            p: a(href="https://github.com/bradparker/neem", target="_blank") NEEM
+
+          p: a(class="btn btn-primary btn-large", href="https://github.com/jerfowler/ExpressBrunchJade", target="_blank") Learn more
+    - while (packages.length>0) {
+        mixin packages(packages.splice(0, 3))
+    - }
+
+    
+block scripts
+  script(src='/socket.io/socket.io.js')
+  script(src='javascripts/vendor.js')
+  script(src='javascripts/app.js', defer, onload="require('initialize');")
+  // Google Analytics: change UA-XXXXX-X to be your site's ID.
+  script
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));

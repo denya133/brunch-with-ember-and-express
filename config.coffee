@@ -26,8 +26,13 @@ exports.config =
     javascripts:
       joinTo: objectify(
         "javascripts#{DIR_SEP}app.js", (path) -> /^app/.test(path) and not /\.prod\./.test(path)
+        "javascripts#{DIR_SEP}head.js", (path) -> /^vendor(\/|\\)head/.test(path) and not /\.prod\./.test(path)
         "javascripts#{DIR_SEP}vendor.js", (path) -> /^vendor/.test(path) and not /\.prod\./.test(path)
-        "test#{DIR_SEP}javascripts#{DIR_SEP}test-vendor.js", /^test(\/|\\)(?=vendor)/
+        # "test#{DIR_SEP}javascripts#{DIR_SEP}test-vendor.js", /^test(\/|\\)(?=vendor)/
+
+        "test#{DIR_SEP}javascripts#{DIR_SEP}test-vendor.js", (path) -> /^vendor(\/|\\)test(\/|\\)scripts(\/|\\)(?!blanket|mocha-blanket)/.test(path) and not /\.prod\./.test(path)
+        "test#{DIR_SEP}javascripts#{DIR_SEP}blanket.js", (path) -> /^vendor(\/|\\)test(\/|\\)scripts(\/|\\)(blanket|mocha-blanket)/.test(path) and not /\.prod\./.test(path)
+        "test#{DIR_SEP}javascripts#{DIR_SEP}test.js", (path) -> /^test/.test(path) and not /\.prod\./.test(path)
       )
 
       order: jsOrder =
@@ -43,6 +48,11 @@ exports.config =
         ]
         after: [
           "vendor#{DIR_SEP}scripts#{DIR_SEP}ember-bootstrap.js"
+
+          "vendor#{DIR_SEP}test#{DIR_SEP}scripts#{DIR_SEP}blanket-1.1.1.js"
+          "vendor#{DIR_SEP}test#{DIR_SEP}scripts#{DIR_SEP}mocha-blanket-1.1.1.js"
+          "vendor#{DIR_SEP}test#{DIR_SEP}scripts#{DIR_SEP}test-helper.js"
+          "vendor#{DIR_SEP}scripts#{DIR_SEP}brunch-reload.js"
         ]
 
     stylesheets:
@@ -50,6 +60,7 @@ exports.config =
         "stylesheets#{DIR_SEP}app.css", (path) ->
           # we need to exclude bootstrap files since they're included in the application.styl
           /^(app|vendor)/.test(path) and not /^vendor(\/|\\)styles(\/|\\)(bootstrap|font\-awesome)(\/|\\)/.test(path)
+        "test#{DIR_SEP}stylesheets#{DIR_SEP}test.css", (path) ->/^test|vendor(\/|\\)test/.test(path)
       )
       order:
         before: [
@@ -103,3 +114,31 @@ exports.config =
         no
       else
         startsWith sysPath.basename(path), '_'
+
+# configs for start server
+  server:
+    path: 'server.coffee'
+    port: process.env.PORT or 3333
+    #listen: process.env.IP or 'localhost'
+    base: '/'
+    app: 'express'
+    debug: 'brunch:server'
+    persistent: true
+    interval: 100
+    watched: ['public', 'express']
+    ignore: /(^[.#]|(?:~)$)/
+    source: /.*\.coffee$/
+    linter:
+      enabled: on
+      coffeelint:
+        pattern: /.*\.coffee$/
+        options:
+          indentation:
+            value: 4
+            level: "error"
+    # tester:
+    #   enabled: on
+    #   mocha:
+    #     pattern: /^.*_test\.coffee$/
+    #     options:
+    #       reporter:'spec'

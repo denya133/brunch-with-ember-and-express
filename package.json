@@ -1,6 +1,6 @@
 {
-  "author": "Huafu Gandon <huafu.gandon@gmail.com>",
-  "name": "brunch-with-ember-and-bootstrap",
+  "author": "Denis Trayzhon <denya@saifas.com>",
+  "name": "brunch-with-ember-and-express",
   "description": "A Brunch skeleton for developing clean Ember applications with CoffeeScript, Stylus, Twitter Bootstrap and Font Awesome",
   "version": "0.4.2-1",
   "homepage": "https://github.com/huafu/brunch-with-ember-and-bootstrap",
@@ -21,14 +21,34 @@
     "coffee-script-brunch": ">= 1.6 < 2",
     "css-brunch": ">= 1.6 < 2",
     "stylus-brunch": ">= 1.6 < 2",
+    "jade-brunch": "*",
     "uglify-js-brunch": ">= 1.6 < 2",
     "clean-css-brunch": ">= 1.6 < 2",
     "auto-reload-brunch": ">= 1.6 < 2",
     "keyword-brunch": ">= 1.6 < 2",
-    "ember-handlebars-brunch": "*"
+    "ember-handlebars-brunch": "*",
+
+    "coffeelint-brunch": "> 1.0 < 1.5",
+    "ugly-blanket-brunch": "~1.5.3",
+    "async": "*",
+    "socket.io": "*",
+    "express": "*",
+    "jade": "~0.28.2",
+    "debug": "~0.7.2",
+    "ansi-color": "*",
+    "date-utils": "*",
+    "growl": "*",
+    "cordell": "*"
   },
   "devDependencies": {
-    "karma": "0.8.1"
+    "karma": "0.8.1",
+
+    "mocha": "*",
+    "chai": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "supertest": "*",
+    "blanket": "*"
   },
   "bugs": {
     "url": "https://github.com/huafu/brunch-with-ember-and-bootstrap/issues"
@@ -40,6 +60,7 @@
     "brunch",
     "skeleton",
     "ember",
+    "express",
     "ember-data",
     "coffeescript",
     "stylus",
