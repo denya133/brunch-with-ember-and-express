@@ -61,6 +61,8 @@ You can easily disable it by prepending `vendor/scripts/ember-data.js` with a `_
 ## Generators
 This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#readme) generators to help you create common files quicker. To use first install scaffolt globally with `npm install -g scaffolt`. Then you can use the following command to generate files.
 
+Generating files of Ember App
+
 ```
 scaffolt model <name>              → app/models/Name.coffee
     => App.Name = DS.Model.extend
@@ -86,6 +88,23 @@ scaffolt component <comp-name>     → app/templates/components/comp-name.hbs
                                    → app/views/components/CompName.coffee
     => App.CompNameComponent = Ember.Component.extend
 ```
+
+Generating files of Express App
+
+```
+scaffolt express_route <name>		→ express/routes/name.coffee
+		=> 	exports.name = (options) ->
+				  (req, res) ->
+				    res.render 'name', {options: options}
+
+scaffolt express_view <name>		→ express/views/name.jade
+		=> 	extends layout
+
+				block content
+
+				// {{name}}
+```
+
 * There's a few more commands you can use with `scaffolt` and also instruction on how to create your own generators, so make sure you check out the [docs](https://github.com/paulmillr/scaffolt#readme).
 * Each generator will automatically add the generated files to the corresponding initializer coffee file so that you won't have to add them yourself.
 
