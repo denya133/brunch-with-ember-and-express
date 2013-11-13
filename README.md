@@ -27,6 +27,9 @@ Create a new project using this skeleton:
 ```
 brunch new gh:denya133/brunch-with-ember-and-express <appname>
 cd <appname>
+git init
+git add .
+git commit -m "repo init"
 brunch watch --server
 ```
 Open [http://localhost:3333](http://localhost:3333) on your browser.
