@@ -15,10 +15,11 @@ which was used for organizing code of express application on Node.js
 - [Ember v1.0.0](http://emberjs.com)
 - [Ember Data v1.0.0b2](https://github.com/emberjs/data)
 - [Handlebars 1.0.0](http://handlebarsjs.com)
-- [jQuery v1.9.1](http://jquery.com)
+- [jQuery v2.0.3](http://jquery.com)
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
 - [Twitter Bootstrap v3.0.0](https://github.com/twitter/bootstrap)
 - [Font Awesome v3.1.0](http://fontawesome.io)
+- [Underscore v1.4.4](http://underscorejs.org/)
 
 
 ## Features

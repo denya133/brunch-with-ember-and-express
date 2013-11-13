@@ -43,7 +43,7 @@ var define, requireModule;
 })();
 (function() {
 window.Bootstrap = Ember.Namespace.create();
-Bootstrap.VERSION = '0.0.4';
+Bootstrap.VERSION = '3.0.0';
 
 if (Ember.libraries) Ember.libraries.register('Bootstrap', Bootstrap.VERSION);
 

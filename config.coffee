@@ -38,13 +38,17 @@ exports.config =
       order: jsOrder =
         before: [
           "vendor#{DIR_SEP}scripts#{DIR_SEP}console-polyfill.js"
-          "vendor#{DIR_SEP}scripts#{DIR_SEP}jquery-1.9.1.js"
+          "vendor#{DIR_SEP}scripts#{DIR_SEP}jquery.js"
           "vendor#{DIR_SEP}scripts#{DIR_SEP}handlebars-1.0.0.js"
           "vendor#{DIR_SEP}scripts#{DIR_SEP}ember.dev.js"
           "vendor#{DIR_SEP}scripts#{DIR_SEP}ember.prod.js"
           "vendor#{DIR_SEP}scripts#{DIR_SEP}ember-data.dev.js"
           "vendor#{DIR_SEP}scripts#{DIR_SEP}ember-data.prod.js"
           "vendor#{DIR_SEP}scripts#{DIR_SEP}bootstrap#{DIR_SEP}tooltip.js"
+          
+          "vendor#{DIR_SEP}scripts#{DIR_SEP}bootstrap#{DIR_SEP}*.js"
+          "vendor#{DIR_SEP}scripts#{DIR_SEP}bootstrap-for-ember#{DIR_SEP}bs-core.js"
+          "vendor#{DIR_SEP}scripts#{DIR_SEP}bootstrap-for-ember#{DIR_SEP}*.js"
         ]
         after: [
           "vendor#{DIR_SEP}scripts#{DIR_SEP}ember-bootstrap.js"

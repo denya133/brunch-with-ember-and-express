@@ -39,7 +39,7 @@ packages = [
         url: 'http://handlebarsjs.com/'
     },{
         name: 'jQuery'
-        version: '1.9.1'
+        version: '2.0.3'
         desc: 'jQuery is a fast and concise JavaScript Library that simplifies
          HTML document traversing, event handling, animating, and Ajax
          interactions for rapid web development. jQuery is designed to change
