@@ -1,4 +1,4 @@
-# Brunch with Ember and Bootstrap
+# Brunch with Ember and Express
 An up-to-date [Brunch](http://brunch.io) skeleton for developing clean [Ember](http://emberjs.com) applications with ease.
 
 It was based the skeleton from Giovanni Collazo [brunch-with-ember-reloaded](https://github.com/gcollazo/brunch-with-ember-reloaded) but is now much more updated and complex now, tho I'd prefer to keep my original source.
@@ -25,7 +25,7 @@ It was based the skeleton from Giovanni Collazo [brunch-with-ember-reloaded](htt
 ## Getting started
 Create a new project using this skeleton:
 ```
-brunch new gh:huafu/brunch-with-ember-and-bootstrap <appname>
+brunch new gh:denya133/brunch-with-ember-and-express <appname>
 cd <appname>
 brunch watch --server
 ```
@@ -117,9 +117,9 @@ cake update-ember-date
 ```
 
 ## License
-All of brunch-with-ember-and-bootstrap is licensed under the MIT license.
+All of brunch-with-ember-and-express is licensed under the MIT license.
 
-Copyright (c) 2013 Huafu Gandon
+Copyright (c) 2013 Denis Trayzhon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
