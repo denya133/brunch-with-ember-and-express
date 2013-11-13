@@ -1,7 +1,14 @@
 # Brunch with Ember and Express
 An up-to-date [Brunch](http://brunch.io) skeleton for developing clean [Ember](http://emberjs.com) applications with ease.
 
-It was based the skeleton from Giovanni Collazo [brunch-with-ember-reloaded](https://github.com/gcollazo/brunch-with-ember-reloaded) but is now much more updated and complex now, tho I'd prefer to keep my original source.
+It was based on the skeleton from Huafu Gandon [brunch-with-ember-and-bootstrap](https://github.com/huafu/brunch-with-ember-and-bootstrap) and
+the skeleton from Giovanni Collazo [brunch-with-ember-reloaded](https://github.com/gcollazo/brunch-with-ember-reloaded) but is now much more updated and complex now, tho I'd prefer to keep my original source.
+
+Also 
+
+the skeleton from Jeremy Fowler [ExpressBrunchJade](https://github.com/jerfowler/ExpressBrunchJade)
+and the skeleton from Elving Rodriguez [brunch-with-hipsters](https://github.com/elving/brunch-with-hipsters) 
+which was used for organizing code of express application on Node.js  
 
 
 ## Versions

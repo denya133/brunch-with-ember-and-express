@@ -26,7 +26,7 @@ app.configure 'development', ->
     app.use express.errorHandler()
     app.locals.pretty = true
 
-app.get '/', routes.index('BEEM', express.version)
+app.get '/', routes.index('Brunch with Ember and Express', express.version)
 app.get '/test', routes.test('Mocha Tests')
 
 ### Default 404 middleware ###
