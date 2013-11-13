@@ -1,3 +1,6 @@
+* __0.5.0__
+    * Merged brunch skeletons: brunch-with-ember-and-bootstrap and ExpressBrunchJade
+
 * __0.4.2-1__
     * Fixed wrong data in the `yuidoc.json` file
 
